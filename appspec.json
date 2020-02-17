@@ -1,0 +1,55 @@
+{
+  "settings": [
+    {
+      "id": "testTimestamp",
+      "name": "Test Timestamp",
+      "description": "Select a date.",
+      "type": "INSTANT",
+      "defaultValue": null
+    },
+    {
+      "id": "testNumber",
+      "name": "Test Number",
+      "description": "Select a number.",
+      "type": "INTEGER",
+      "defaultValue": null
+    },
+    {
+      "id": "testString",
+      "name": "Test String",
+      "description": "Select a String.",
+      "type": "STRING",
+      "defaultValue": null
+    },
+    {
+      "id": "testDropdown",
+      "name": "Test Dropdown",
+      "description": "Select an option.",
+      "type": "DROPDOWN",
+      "defaultValue": null,
+      "options": [{
+          "value": null,
+          "displayText": "Empty Selection"
+        },
+        {
+          "value": "some-value",
+          "displayText": "Some Value"
+        }]
+    },
+    {
+      "id": "testRadioButtons",
+      "name": "Test Radiobuttons",
+      "description": "Select an option.",
+      "type": "RADIOBUTTONS",
+      "defaultValue": null,
+      "options": [{
+          "value": "some-value",
+          "displayText": "Some Value"
+        },
+        {
+          "value": "another-value",
+          "displayText": "Another Value"
+        }]
+    }
+  ]
+}
