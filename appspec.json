@@ -5,7 +5,7 @@
       "name": "Test Timestamp",
       "description": "Select a date.",
       "type": "INSTANT",
-      "defaultValue": null
+      "defaultValue": "12345"
     },
     {
       "id": "testNumber",
