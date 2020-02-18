@@ -19,7 +19,7 @@
       "name": "Test String",
       "description": "Select a String.",
       "type": "STRING",
-      "defaultValue": null
+      "defaultValue": 123
     },
     {
       "id": "testDropdown",
