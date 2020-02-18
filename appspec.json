@@ -2,7 +2,6 @@
   "settings": [
     {
       "id": "testTimestamp",
-      "name": "Test Timestamp",
       "description": "Select a date.",
       "type": "INSTANT",
       "defaultValue": null
