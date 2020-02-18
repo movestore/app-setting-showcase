@@ -41,7 +41,7 @@
       "name": "Test Radiobuttons",
       "description": "Select an option.",
       "type": "RADIOBUTTONS",
-      "defaultValue": null,
+      "defaultValue": "not-existing-value",
       "options": [{
           "value": "some-value",
           "displayText": "Some Value"
