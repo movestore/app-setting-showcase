@@ -50,6 +50,13 @@
           "value": "another-value",
           "displayText": "Another Value"
         }]
-    }
+    },
+    {
+      "id": "testCheckbox",
+      "name": "Test Checkbox",
+      "description": "Select an option.",
+      "type": "CHECKBOX",
+      "defaultValue": true
+    },
   ]
 }
