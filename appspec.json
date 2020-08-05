@@ -15,6 +15,13 @@
       "defaultValue": null
     },
     {
+      "id": "testDecimal",
+      "name": "Test Decimal",
+      "description": "Select a decimal.",
+      "type": "DECIMAL",
+      "defaultValue": null
+    },
+    {
       "id": "testString",
       "name": "Test String",
       "description": "Select a String.",
