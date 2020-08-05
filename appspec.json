@@ -65,5 +65,12 @@
       "type": "CHECKBOX",
       "defaultValue": true
     },
-  ]
+  ],
+  "dependencies": {
+   "R": [
+     {
+       "name": "move"
+     }
+   ]
+ }
 }
