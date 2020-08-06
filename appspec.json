@@ -15,10 +15,10 @@
       "defaultValue": null
     },
     {
-      "id": "testDecimal",
-      "name": "Test Decimal",
-      "description": "Select a decimal.",
-      "type": "DECIMAL",
+      "id": "testDouble",
+      "name": "Test Double",
+      "description": "Select a double.",
+      "type": "DOUBLE",
       "defaultValue": null
     },
     {
