@@ -72,5 +72,30 @@
        "name": "move"
      }
    ]
- }
+ },
+  "license": {
+    "key": "MIT"
+  },
+  "language": "eng",
+  "keywords": [
+    "example",
+    "showcase",
+    "demo",
+    "app-settings",
+    "settings"
+  ],
+  "people": [
+    {
+      "firstName": "Julian",
+      "lastName": "Hirt",
+      "email": "julian@couchbits.com",
+      "roles": [
+        "author",
+        "creator"
+      ]
+    }
+  ],
+  "documentation": {
+    "url": "https://github.com/movestore/app-setting-showcase/blob/master/README.md"
+  }
 }
