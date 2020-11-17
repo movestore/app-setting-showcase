@@ -95,6 +95,13 @@
       ]
     }
   ],
+  "references": [
+    {
+      "type": "IsPartOf",
+      "note": "Morning Report, MoveApps Shiny App",
+      "url": "https://github.com/movestore/MorningReport/blob/master/README.md"
+    }
+  ],
   "documentation": {
     "url": "https://github.com/movestore/app-setting-showcase/blob/master/README.md"
   }
