@@ -8,7 +8,7 @@ rFunction = function(
     testRadioButtons,
     testCheckbox,
     testDouble,
-    forceError
+    forceError,
     data
 ) {
   print(paste("testTimestamp Value: ", testTimestamp))
@@ -20,7 +20,8 @@ rFunction = function(
   print(paste("testDouble value: ", testDouble))
 
   if (forceError) {
-    3 / 0
+    logger.warn("I will now force an error (as you requested!)")
+    stop("as you wish")
   }
   data
 }
