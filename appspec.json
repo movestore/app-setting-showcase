@@ -64,6 +64,13 @@
       "description": "Select an option.",
       "type": "CHECKBOX",
       "defaultValue": true
+    },
+    {
+      "id": "forceError",
+      "name": "Force an Error",
+      "description": "Force an error.",
+      "type": "CHECKBOX",
+      "defaultValue": false
     }
   ],
   "dependencies": {
@@ -82,7 +89,9 @@
     "showcase",
     "demo",
     "app-settings",
-    "settings"
+    "settings",
+    "testing",
+    "error handle testing"
   ],
   "people": [
     {
@@ -92,6 +101,14 @@
       "roles": [
         "author",
         "creator"
+      ]
+    },
+    {
+      "firstName": "Clemens",
+      "lastName": "Hahn",
+      "email": "clemens@couchbits.com",
+      "roles": [
+        "contributor",
       ]
     }
   ],
