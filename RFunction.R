@@ -8,6 +8,7 @@ rFunction = function(
     testRadioButtons,
     testCheckbox,
     testDouble,
+    testLocalFile,
     forceError,
     data
 ) {
@@ -18,10 +19,11 @@ rFunction = function(
   print(paste("testRadioButtons Value: ", testRadioButtons))
   print(paste("testCheckbox Value: ", testCheckbox))
   print(paste("testDouble value: ", testDouble))
+  print(paste("testLocalFile value: ", testLocalFile))
 
   if (forceError) {
     logger.warn("I will now force an error (as you requested!)")
     stop("as you wish")
   }
-  data
+  return(data)
 }

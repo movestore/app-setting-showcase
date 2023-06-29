@@ -66,6 +66,12 @@
       "defaultValue": true
     },
     {
+      "id": "testLocalFile",
+      "name": "Test Local File",
+      "description": "Upload a file.",
+      "type": "LOCAL_FILE"
+    },
+    {
       "id": "forceError",
       "name": "Force an Error",
       "description": "Force an error.",
