@@ -34,14 +34,16 @@
       "description": "Select an option.",
       "type": "DROPDOWN",
       "defaultValue": null,
-      "options": [{
+      "options": [
+        {
           "value": null,
           "displayText": "Empty Selection"
         },
         {
           "value": "some-value",
           "displayText": "Some Value"
-        }]
+        }
+      ]
     },
     {
       "id": "testRadioButtons",
@@ -49,14 +51,16 @@
       "description": "Select an option.",
       "type": "RADIOBUTTONS",
       "defaultValue": null,
-      "options": [{
+      "options": [
+        {
           "value": "some-value",
           "displayText": "Some Value"
         },
         {
           "value": "another-value",
           "displayText": "Another Value"
-        }]
+        }
+      ]
     },
     {
       "id": "testCheckbox",
@@ -80,12 +84,12 @@
     }
   ],
   "dependencies": {
-   "R": [
-     {
-       "name": "move"
-     }
-   ]
- },
+    "R": [
+      {
+        "name": "move"
+      }
+    ]
+  },
   "license": {
     "key": "MIT"
   },
@@ -114,7 +118,7 @@
       "lastName": "Hahn",
       "email": "clemens@couchbits.com",
       "roles": [
-        "contributor",
+        "contributor"
       ]
     }
   ],
