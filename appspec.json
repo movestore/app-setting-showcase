@@ -59,6 +59,10 @@
         {
           "value": "another-value",
           "displayText": "Another Value"
+        },
+        {
+          "value": null,
+          "displayText": "no selection"
         }
       ]
     },

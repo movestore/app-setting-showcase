@@ -1,1 +1,11 @@
-{}
+{
+    "testTimestamp": 2,
+    "testNumber": null,
+    "testDouble": null,
+    "testString": null,
+    "testDropdown": null,
+    "testRadioButtons": null,
+    "testCheckbox": false,
+    "testLocalFile": null,
+    "forceError": false
+}

@@ -12,18 +12,23 @@ rFunction = function(
     forceError,
     data
 ) {
-  print(paste("testTimestamp Value: ", testTimestamp))
-  print(paste("testNumber Value: ", testNumber))
-  print(paste("testString Value: ", testString))
-  print(paste("testDropdown Value: ", testDropdown))
-  print(paste("testRadioButtons Value: ", testRadioButtons))
-  print(paste("testCheckbox Value: ", testCheckbox))
-  print(paste("testDouble value: ", testDouble))
-  print(paste("testLocalFile value: ", testLocalFile))
+  printArg("testTimestamp", testTimestamp)
+  printArg("testNumber", testNumber)
+  printArg("testString", testString)
+  printArg("testDropdown", testDropdown)
+  printArg("testRadioButtons", testRadioButtons)
+  printArg("testCheckbox", testCheckbox)
+  printArg("testDouble", testDouble)
+  printArg("testLocalFile", testLocalFile)
 
   if (forceError) {
     logger.warn("I will now force an error (as you requested!)")
     stop("as you wish")
   }
   return(data)
+}
+
+printArg <- function(name, value) {
+  v <- if (is.null(value)) 'null-value' else value
+  logger.info("%s: '%s'", name, v)
 }
