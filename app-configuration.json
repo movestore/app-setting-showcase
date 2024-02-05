@@ -5,7 +5,7 @@
     "testString": null,
     "testDropdown": null,
     "testRadioButtons": null,
-    "testCheckbox": false,
+    "testCheckbox": null,
     "testLocalFile": null,
     "forceError": false
 }
