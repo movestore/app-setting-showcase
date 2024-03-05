@@ -23,10 +23,11 @@ rFunction = function(
   printArg("testLocalFile", testLocalFile)
   printArg("testUserFile", testUserFile)
 
-  localFile <- paste0(getAppFilePath("testLocalFile", fallback=FALSE), "expected.txt")
+  localFile <- paste0(getAppFilePath("testLocalFile", fallback=TRUE), "expected.txt")
   printFileInfo("testLocalFile", localFile)
 
-  userFile <- paste0(getAppFilePath("testUserFile", fallback=FALSE), testUserFile)
+  userFile <- getAuxiliaryFilePath("testUserFile", fallback=FALSE)
+  print(userFile)
   printFileInfo("testUserFile", userFile)
 
   if (forceError) {
@@ -42,6 +43,10 @@ printArg <- function(name, value) {
 }
 
 printFileInfo <- function(settingId, file) {
-  info <- file.info(file)
-  logger.info("%s: %s", settingId, toString(info))
+  if (file.exists(file)) {
+    info <- file.info(file)
+    logger.info("%s: %s", settingId, readChar(file, file.info(file)$size))
+  } else {
+    logger.info("%s: '%s' %s", settingId, file, "is not present!")
+  }
 }
