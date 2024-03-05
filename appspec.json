@@ -77,8 +77,14 @@
     {
       "id": "testLocalFile",
       "name": "Test Local File",
-      "description": "Upload a file.",
+      "description": "Upload a file (deprecated!). The file-name must be `expected.txt`!",
       "type": "LOCAL_FILE"
+    },
+    {
+      "id": "testUserFile",
+      "name": "Test User File",
+      "description": "Upload a file. The file-name is up to you.",
+      "type": "USER_FILE"
     },
     {
       "id": "forceError",

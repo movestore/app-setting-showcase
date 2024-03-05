@@ -7,5 +7,6 @@
     "testRadioButtons": null,
     "testCheckbox": null,
     "testLocalFile": null,
+    "testUserFile": "any-file-name.txt",
     "forceError": false
 }
