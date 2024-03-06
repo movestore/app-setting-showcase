@@ -94,6 +94,12 @@
       "defaultValue": false
     }
   ],
+  "providedAppFiles": [
+    {
+      "settingId": "testLocalFile",
+      "from": "data/auxiliary/user-files/provided-app-files/testLocalFile/expected.txt"
+    }
+  ],
   "dependencies": {
     "R": [
       {

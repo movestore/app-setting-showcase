@@ -14,13 +14,17 @@ getAuxiliaryFilePath <- function(appSpecUserFileSettingId, fallbackToProvidedFil
     appDevFallbackDir <- paste0(Sys.getenv(x = "USER_APP_FILE_HOME_DIR"), Sys.getenv(x = "USER_APP_FILE_FALLBACK_DIR", "/provided-app-files/"))
     dir <- getUploadDirOrFallbackDir(appSpecUserFileSettingId, fallbackToProvidedFiles, userUploadDir, appDevFallbackDir)
     if (is.null(dir)) {
+        logger.warn("[%s] No files found for App setting '%s'. Therefor return null..", appSpecUserFileSettingId)
         return(NULL)
     }
     if (length(list.files(dir)) != 1) {
+        logger.warn("[%s] A App setting of type `USER_FILE` must contain exactly 0 or 1 file(s). The setting contains '%s' file(s). Therefor returning `null`..", appSpecUserFileSettingId, length(list.files(dir)))
         return(NULL)
     }
     # R vectors are one-based!
-    return(paste0(dir, list.files(dir)[1]))
+    result <- paste0(dir, list.files(dir)[1])
+    logger.info("[%s] Resolved file-path: '%s'", appSpecUserFileSettingId, result)
+    return(result)
 }
 
 #' DEPRECATED!
