@@ -6,7 +6,7 @@
     "testDropdown": null,
     "testRadioButtons": null,
     "testCheckbox": null,
-    "testLocalFile": null,
-    "testUserFile": "any-file-name.txt",
+    "testLocalFile": {},
+    "testUserFile": {},
     "forceError": false
 }
