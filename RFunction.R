@@ -37,14 +37,14 @@ rFunction = function(
 
 printArg <- function(name, value) {
   v <- if (is.null(value)) 'null-value' else value
-  logger.info("%s: '%s'", name, v)
+  logger.info("[%s]: '%s'", name, v)
 }
 
 printFileInfo <- function(settingId, file) {
   if (file.exists(file)) {
     info <- file.info(file)
-    logger.info("%s: %s", settingId, readChar(file, file.info(file)$size))
+    logger.info("[%s]: %s", settingId, readChar(file, file.info(file)$size))
   } else {
-    logger.info("%s: '%s' %s", settingId, file, "is not present!")
+    logger.info("[%s]: '%s' %s", settingId, file, "is not present!")
   }
 }
