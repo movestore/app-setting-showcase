@@ -25,7 +25,6 @@ rFunction = function(
   printFileInfo("testLocalFile", localFile)
 
   userFile <- getAuxiliaryFilePath("testUserFile", fallback=FALSE)
-  print(userFile)
   printFileInfo("testUserFile", userFile)
 
   if (forceError) {
