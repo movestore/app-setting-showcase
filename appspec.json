@@ -101,11 +101,7 @@
     }
   ],
   "dependencies": {
-    "R": [
-      {
-        "name": "move"
-      }
-    ]
+    "R": []
   },
   "license": {
     "key": "MIT"

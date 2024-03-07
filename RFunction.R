@@ -1,5 +1,3 @@
-library('move')
-
 rFunction = function(
     testTimestamp,
     testNumber,
