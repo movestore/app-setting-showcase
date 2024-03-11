@@ -1,5 +1,3 @@
-library('move')
-
 rFunction = function(
     testTimestamp,
     testNumber,
@@ -9,6 +7,7 @@ rFunction = function(
     testCheckbox,
     testDouble,
     testLocalFile,
+    testUserFile,
     forceError,
     data
 ) {
@@ -20,6 +19,13 @@ rFunction = function(
   printArg("testCheckbox", testCheckbox)
   printArg("testDouble", testDouble)
   printArg("testLocalFile", testLocalFile)
+  printArg("testUserFile", testUserFile)
+
+  localFile <- paste0(getAppFilePath("testLocalFile", fallback=TRUE), "expected.txt")
+    printFileInfo("testLocalFile", localFile)
+
+  userFile <- getAuxiliaryFilePath("testUserFile", fallback=FALSE)
+  printFileInfo("testUserFile", userFile)
 
   if (forceError) {
     logger.warn("I will now force an error (as you requested!)")
@@ -30,5 +36,13 @@ rFunction = function(
 
 printArg <- function(name, value) {
   v <- if (is.null(value)) 'null-value' else value
-  logger.info("%s: '%s'", name, v)
+  logger.info("[%s]: '%s'", name, v)
+}
+
+printFileInfo <- function(settingId, file) {
+  if (!is.null(file) && file.exists(file)) {
+    logger.info("[%s]: %s", settingId, readChar(file, file.info(file)$size))
+  } else {
+    logger.info("[%s]: %s", settingId, "file is not present!")
+  }
 }
