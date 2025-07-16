@@ -4,6 +4,7 @@
     "testDouble": null,
     "testString": null,
     "testSecret": "super-secret",
+    "testPlainSecret": "super-not-so-secret",
     "testDropdown": null,
     "testRadioButtons": null,
     "testCheckbox": null,

@@ -32,6 +32,13 @@
     {
       "id": "testSecret",
       "name": "Test Secret",
+      "description": "Select a Secret",
+      "type": "SECRET",
+      "defaultValue": null
+    },
+    {
+      "id": "testPlainSecret",
+      "name": "Plain Secret",
       "description": "Select a Secret - but as a string.",
       "type": "STRING",
       "defaultValue": null
