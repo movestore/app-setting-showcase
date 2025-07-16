@@ -3,6 +3,7 @@
     "testNumber": null,
     "testDouble": null,
     "testString": null,
+    "testSecret": "super-secret",
     "testDropdown": null,
     "testRadioButtons": null,
     "testCheckbox": null,
