@@ -8,8 +8,12 @@ configuration <- function() {
     }
 
     if (Sys.getenv(x = "PRINT_CONFIGURATION", "no") == "yes") {
-        logger.debug("parse stored configuration: \'%s\'", configurationFile)
-        logger.info("app will be started with configuration:\n%s", jsonlite::toJSON(result, auto_unbox = TRUE, pretty = TRUE))
+        secretSettingIds <- strsplit(Sys.getenv(x = "MASK_SECRET_SETTING_IDS", ""), ",")[[1]]
+        filteredResult <- result
+        if (length(secretSettingIds) > 0) {
+            filteredResult[secretSettingIds] <- "***masked***"
+        }
+        logger.info("app will be started with configuration:\n%s", jsonlite::toJSON(filteredResult, auto_unbox = TRUE, pretty = TRUE))
     }
     result
 }
