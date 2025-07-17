@@ -38,9 +38,9 @@
     },
     {
       "id": "testPlainSecret",
-      "name": "Plain Secret",
-      "description": "Select a Secret - but as a string.",
-      "type": "STRING",
+      "name": "Migrated Secret",
+      "description": "Select a Secret - now masked.",
+      "type": "SECRET",
       "defaultValue": null
     },
     {
