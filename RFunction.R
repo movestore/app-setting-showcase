@@ -2,6 +2,7 @@ rFunction = function(
     testTimestamp,
     testNumber,
     testString,
+    testSecret,
     testDropdown,
     testRadioButtons,
     testCheckbox,
@@ -14,6 +15,7 @@ rFunction = function(
   printArg("testTimestamp", testTimestamp)
   printArg("testNumber", testNumber)
   printArg("testString", testString)
+  printArg("testSecret", testSecret)
   printArg("testDropdown", testDropdown)
   printArg("testRadioButtons", testRadioButtons)
   printArg("testCheckbox", testCheckbox)

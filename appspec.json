@@ -30,6 +30,13 @@
       "defaultValue": null
     },
     {
+      "id": "testSecret",
+      "name": "Test Secret",
+      "description": "Select a Secret",
+      "type": "SECRET",
+      "defaultValue": null
+    },
+    {
       "id": "testDropdown",
       "name": "Test Dropdown",
       "description": "Select an option.",
