@@ -3,7 +3,6 @@ rFunction = function(
     testNumber,
     testString,
     testSecret,
-    testPlainSecret,
     testDropdown,
     testRadioButtons,
     testCheckbox,
@@ -17,7 +16,6 @@ rFunction = function(
   printArg("testNumber", testNumber)
   printArg("testString", testString)
   printArg("testSecret", testSecret)
-  printArg("testPlainSecret", testPlainSecret)
   printArg("testDropdown", testDropdown)
   printArg("testRadioButtons", testRadioButtons)
   printArg("testCheckbox", testCheckbox)

@@ -37,13 +37,6 @@
       "defaultValue": null
     },
     {
-      "id": "testPlainSecret",
-      "name": "Migrated Secret",
-      "description": "Select a Secret - now masked.",
-      "type": "SECRET",
-      "defaultValue": null
-    },
-    {
       "id": "testDropdown",
       "name": "Test Dropdown",
       "description": "Select an option.",
