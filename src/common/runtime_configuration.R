@@ -8,10 +8,10 @@ configuration <- function() {
     }
 
     if (Sys.getenv(x = "PRINT_CONFIGURATION", "no") == "yes") {
-        secretSettingIds <- strsplit(Sys.getenv(x = "MASK_SECRET_SETTING_IDS", ""), ",")[[1]]
+        maskSettingIds <- strsplit(Sys.getenv(x = "MASK_SETTING_IDS", ""), ",")[[1]]
         filteredResult <- result
-        if (length(secretSettingIds) > 0) {
-            filteredResult[secretSettingIds] <- "***masked***"
+        if (length(maskSettingIds) > 0) {
+            filteredResult[maskSettingIds] <- "***masked***"
         }
         logger.info("app will be started with configuration:\n%s", jsonlite::toJSON(filteredResult, auto_unbox = TRUE, pretty = TRUE))
     }
