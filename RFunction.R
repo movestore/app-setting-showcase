@@ -7,7 +7,6 @@ rFunction = function(
     testRadioButtons,
     testCheckbox,
     testDouble,
-    testLocalFile,
     testUserFile,
     forceError,
     data
@@ -20,13 +19,9 @@ rFunction = function(
   printArg("testRadioButtons", testRadioButtons)
   printArg("testCheckbox", testCheckbox)
   printArg("testDouble", testDouble)
-  printArg("testLocalFile", testLocalFile)
   printArg("testUserFile", testUserFile)
 
-  localFile <- paste0(getAppFilePath("testLocalFile", fallback=TRUE), "expected.txt")
-    printFileInfo("testLocalFile", localFile)
-
-  userFile <- getAuxiliaryFilePath("testUserFile", fallback=FALSE)
+  userFile <- getAuxiliaryFilePath("testUserFile", fallback=TRUE)
   printFileInfo("testUserFile", userFile)
 
   if (forceError) {

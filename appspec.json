@@ -82,15 +82,9 @@
       "defaultValue": true
     },
     {
-      "id": "testLocalFile",
-      "name": "Test Local File",
-      "description": "Upload a file (deprecated!). The file-name must be `expected.txt`!",
-      "type": "LOCAL_FILE"
-    },
-    {
       "id": "testUserFile",
       "name": "Test User File",
-      "description": "Upload a file. The file-name is up to you.",
+      "description": "Upload a file. The file-name is up to you. Without an upload the app uses the file it provides.",
       "type": "USER_FILE"
     },
     {
@@ -103,8 +97,8 @@
   ],
   "providedAppFiles": [
     {
-      "settingId": "testLocalFile",
-      "from": "data/auxiliary/user-files/provided-app-files/testLocalFile/expected.txt"
+      "settingId": "testUserFile",
+      "from": "data/auxiliary/user-files/provided-app-files/testUserFile/expected.txt"
     }
   ],
   "dependencies": {
